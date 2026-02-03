@@ -10,7 +10,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'dev-secret-key-change-in-produ
 
 DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '*',"fossee-webbasedapp-1.onrender.com"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -95,3 +95,15 @@ REST_FRAMEWORK = {
 # Media files for uploaded CSVs (optional storage)
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "build", "static"),
+]
+
+TEMPLATES[0]["DIRS"] = [
+    os.path.join(BASE_DIR, "build")
+]
