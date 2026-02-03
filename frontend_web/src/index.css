@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f0fdf4;          /* very light green background */
+  --surface: #dcfce7;     /* card/surface green */
+  --border: #bbf7d0;      /* soft green border */
+  --text: #14532d;        /* deep green text */
+  --muted: #4d7c5a;       /* muted green-gray */
+  --accent: #22c55e;      /* primary green accent */
+  --accent-dim: #16a34a;  /* darker green accent */
+  --success: #15803d;     /* success green */
+  --danger: #dc2626;      /* keep danger red for contrast */
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+input, select {
+  font-family: var(--font-mono);
+}
