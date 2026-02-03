@@ -1,5 +1,6 @@
 PyQt5>=5.15.0
 matplotlib>=3.7.0
 requests>=2.28.0
-gunicorn
+Django>=4.2
 djangorestframework
+gunicorn
