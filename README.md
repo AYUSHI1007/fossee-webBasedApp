@@ -1,4 +1,4 @@
-# Chemical Equipment Parameter Visualizer (Hybrid Web + Desktop)
+# Chemical Equipment Parameter Visualizer 
 
 A hybrid application for data visualization and analytics of chemical equipment. Upload CSV files with columns **Equipment Name**, **Type**, **Flowrate**, **Pressure**, and **Temperature**. The Django backend parses data with Pandas, stores the last 5 datasets in SQLite, and exposes a REST API. Both a **React (Web)** and **PyQt5 (Desktop)** frontend consume this API to show tables, charts, summaries, and PDF reports.
 
