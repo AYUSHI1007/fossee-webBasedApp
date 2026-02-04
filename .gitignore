@@ -39,3 +39,7 @@ Thumbs.db
 # Env
 .env
 .env.local
+
+node_modules/
+build/
+
